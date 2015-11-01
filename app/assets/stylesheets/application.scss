@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+$dark-grey: #222222;
+
+// header
+
+.navbar-header-main {
+  background: #ffffff;
+  color: $dark-grey;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+  height: 50px;
+  border-bottom: 1px solid $dark-grey;
+  .main-header {
+    height: 48px;
+    padding: 13px 0;
+    .phones {
+      font-size: 16px;
+      i {
+        display: inline-block;
+        border: 1px solid $dark-grey;
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
+        border-radius: 50%;
+        padding: 2px 4px;
+        margin-right: 10px;
+      }
+    }
+    .user-block {
+
+    }
+  }
+}
+
+.logo-block {
+  #header-search {
+    position: relative;
+    padding-top: 40px;
+    width: 70%;
+    .form-control {
+      border-radius: 0;
+      border-color: $dark-grey;
+    }
+    .form-control-submit {
+      position: absolute;
+      top: 40px;
+      right: -10px;
+      font-size: 24px;
+      padding: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+.navbar-header-category {
+  background: $dark-grey;
+  color: #ffffff;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+  .navbar-nav {
+    text-align: center;
+    float: none;
+    li {
+      display: inline-block;
+      float: none;
+      a {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 22px 40px;
+        &:hover, &:focus {
+          text-decoration: underline;
+          color: #ffffff;
+        }
+      }
+    }
+    .active {
+      a, a:hover, a:focus {
+        background-color: $dark-grey;
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
