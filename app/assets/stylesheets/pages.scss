@@ -1,3 +1,35 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$dark-grey: #222222;
+
+
+.category-list {
+  .category-link {
+    text-decoration: none;
+    .category-item {
+      height: 400px;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid $dark-grey;
+      .category-info {
+        display: none;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.3);
+        padding-top: 100px;
+        h2 {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+      &:hover, &:focus {
+        text-decoration: none;
+        .category-info {
+          display: block;
+        }
+      }
+    }
+  }
+}

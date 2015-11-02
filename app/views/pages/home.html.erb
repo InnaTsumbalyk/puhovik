@@ -1,0 +1,18 @@
+<div class="category-list">
+  <div class="col-md-4 reset-padding">
+  <% @categories.each_with_index do |category, index| %>
+    <%= link_to '#', class: 'category-link' do %>
+      <div class="category-item">
+        <div class="category-info">
+          <h2><%= category.title %></h2>
+        </div>
+      </div>
+    <% end %>
+    </div>
+    <% if index == 0 || index == 1 %>
+      <div class="col-md-8 reset-padding" >
+    <% elsif index == 2 %>
+      <div class="col-md-4 reset-padding">
+    <% end %>
+  <% end %>
+</div>

@@ -67,18 +67,11 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-category">
       <ul class="nav navbar-nav">
-        <li>
-          <%= link_to 'Пуховики', '#' %>
-        </li>
-        <li>
-          <%= link_to 'Куртки', '#' %>
-        </li>
-        <li>
-          <%= link_to 'Парки', '#' %>
-        </li>
-        <li>
-          <%= link_to 'Ветровки', '#' %>
-        </li>
+        <% @categories.each do |category| %>
+          <li>
+            <%= link_to category.title, '#' %>
+          </li>
+        <% end %>
         <li class="<%= current_page?(about_path) ? 'active' : '' %>">
           <%= link_to 'О нас', about_path %>
         </li>

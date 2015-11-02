@@ -15,8 +15,13 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "pages";
 
 $dark-grey: #222222;
+
+.reset-padding {
+  padding: 0;
+}
 
 // header
 
