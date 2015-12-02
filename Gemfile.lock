@@ -240,7 +240,6 @@ DEPENDENCIES
   devise
   font-awesome-sass
   jquery-rails
-  kaminari
   pg
   quiet_assets
   rails (= 4.2.4)

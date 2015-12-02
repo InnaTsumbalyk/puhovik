@@ -1,7 +1,7 @@
 <div class="category-list">
   <div class="col-md-4 reset-padding">
   <% @categories.each_with_index do |category, index| %>
-    <%= link_to '#', class: 'category-link' do %>
+    <%= link_to products_path(category: category.id), class: 'category-link' do %>
       <div class="category-item" style="background-image:url('<%= category.image_url %>'); background-size: cover;">
         <div class="category-info">
           <h2><%= category.title %></h2>

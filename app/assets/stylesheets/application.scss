@@ -108,3 +108,18 @@ $dark-grey: #222222;
     }
   }
 }
+
+.btn-buy {
+  display: inline-block;
+  background: #fff;
+  border: 2px solid $dark-grey;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  color: $dark-grey;
+  min-width: 100px;
+  &:hover, &:active, &:focus {
+    background: $dark-grey;
+    color: #fff;
+  }
+}
