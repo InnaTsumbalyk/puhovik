@@ -1,0 +1,12 @@
+// Place all the styles related to the Product controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$dark-grey: #222222;
+
+.product {
+  border: 2px solid $dark-grey;
+  border-radius: 3px;
+  padding: 20px 15px;
+  margin-top: 10px;
+}
