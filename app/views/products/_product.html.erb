@@ -10,7 +10,7 @@
       <%= link_to product.title, product %>
     </div>
     <div class="product-action text-center">
-      <%= link_to 'Buy', product, class: 'btn-buy' %>
+      <%= button_to 'Buy', line_items_path(product_id: product), class: 'btn-buy' %>
     </div>
   </div>
 </div>
