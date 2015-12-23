@@ -11,4 +11,14 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
   end
+
+  def search_suggestions
+    query = params[:query]
+    results = if params[:query].present?
+                Product.where('title ILIKE ? OR description ILIKE ?', "%#{query}%", "%#{query}%").select(:title).collect(&:title)
+              else
+                []
+              end
+    render json: results
+  end
 end

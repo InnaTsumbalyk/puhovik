@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about', as: :about
   get 'contact' => 'pages#contact', as: :contact
 
+  get 'search_suggestions' => 'products#search_suggestions', as: :search_suggestions
+
   resources :products, only: [:index, :show]
 
   namespace :backend do

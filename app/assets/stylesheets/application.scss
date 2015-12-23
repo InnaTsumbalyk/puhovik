@@ -123,3 +123,22 @@ $dark-grey: #222222;
     color: #fff;
   }
 }
+
+ul#results {
+  position: absolute;
+  background-color: white;
+  z-index: 6666;
+  list-style: none;
+  padding: 4px 20px;
+  border: 1px solid #000000;
+  margin-top: -1px;
+  width: 228px;
+  display: none;
+  li {
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+      color: #337ab7;
+    }
+  }
+}
